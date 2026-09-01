@@ -34,6 +34,7 @@ install_packages() {
     log "Installing official packages"
 
     if [ -f "$DOTFILES_DIR/packages.txt" ]; then
+        # shellcheck disable=SC2024
         sudo pacman -S --needed - < "$DOTFILES_DIR/packages.txt"
     fi
 
