@@ -1,15 +1,12 @@
 cloudflare-warp-bin
 dstask
-dstask-debug
 graphite-gtk-theme
-happ
+happ-desktop-bin
 paru
-paru-debug
 pyprpaper
 python-pywal
 tg-ws-proxy-bin
 visual-studio-code-bin
 yandex-music
 yay
-yay-debug
 zapret-git

@@ -13,7 +13,6 @@ btop
 cava
 chafa
 cliphist
-cloudflare-warp-bin
 cmake
 cups
 cups-filters
@@ -22,7 +21,6 @@ ddgr
 discord
 dolphin
 dotnet-sdk
-dstask
 duf
 dunst
 efibootmgr
@@ -34,13 +32,11 @@ flatpak
 fzf
 gdb
 git
-graphite-gtk-theme
 grim
 grub
 gst-plugin-pipewire
 gutenprint
 gwenview
-happ
 htop
 hyprland
 hyprlock
@@ -86,8 +82,6 @@ openssh
 otf-font-awesome
 pandoc-cli
 papirus-icon-theme
-paru
-paru-debug
 pavucontrol
 picom
 pipewire
@@ -95,9 +89,7 @@ pipewire-alsa
 pipewire-jack
 pipewire-pulse
 polkit-kde-agent
-pyprpaper
 python-pipx
-python-pywal
 qt5-wayland
 qt6-wayland
 rustup
@@ -112,7 +104,6 @@ sudo
 swappy
 swaync
 telegram-desktop
-tg-ws-proxy-bin
 thunar
 thunar-volman
 ttf-jetbrains-mono
@@ -122,7 +113,6 @@ unzip
 uwsm
 valgrind
 vim
-visual-studio-code-bin
 vlc
 vulkan-intel
 vulkan-nouveau
@@ -146,11 +136,7 @@ xorg-server
 xorg-xinit
 xorg-xinput
 xsv
-yandex-music
-yay
-yay-debug
 yazi
-zapret-git
 zathura
 zathura-pdf-mupdf
 zellij
