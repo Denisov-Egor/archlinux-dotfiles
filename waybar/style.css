@@ -1,0 +1,374 @@
+/*
+============================================================
+HYPRLAND / WAYBAR
+Minimal Dark
+============================================================
+*/
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   BAR
+   ========================================================= */
+
+window#waybar {
+    background: transparent;
+    color: #d8dee9;
+}
+
+/* =========================================================
+   COMMON
+   ========================================================= */
+
+#workspaces,
+#mpris,
+#custom-layout,
+#custom-microphone,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#cpu,
+#memory,
+#custom-gpu,
+#custom-vram,
+#temperature,
+#disk,
+#custom-uptime,
+#custom-notifications,
+#custom-wallpaper,
+#tray,
+#clock,
+#custom-power {
+
+    background: rgba(18, 20, 25, 0.94);
+
+    border: 1px solid rgba(255, 255, 255, 0.06);
+
+    border-radius: 9px;
+
+    margin: 4px 2px;
+
+    padding: 0 10px;
+
+    transition:
+        background 0.18s ease,
+        border-color 0.18s ease,
+        color 0.18s ease;
+}
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+#workspaces button:hover,
+#mpris:hover,
+#custom-layout:hover,
+#custom-microphone:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#custom-gpu:hover,
+#custom-vram:hover,
+#temperature:hover,
+#disk:hover,
+#custom-uptime:hover,
+#custom-notifications:hover,
+#custom-wallpaper:hover,
+#tray:hover,
+#clock:hover,
+#custom-power:hover {
+
+    background: rgba(35, 38, 46, 0.98);
+
+    border-color: rgba(255, 255, 255, 0.12);
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   KEYBOARD LAYOUT
+   ========================================================= */
+
+#custom-layout {
+    color: #b7bec9;
+    min-width: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#custom-layout:hover {
+    color: #ffffff;
+}
+
+/* =========================================================
+   WORKSPACES
+   ========================================================= */
+
+#workspaces {
+    padding: 0 4px;
+}
+
+#workspaces button {
+
+    background: transparent;
+
+    border: none;
+
+    border-radius: 7px;
+
+    color: #555b66;
+
+    padding: 0 7px;
+
+    margin: 3px 1px;
+
+    transition:
+        background 0.18s ease,
+        color 0.18s ease;
+}
+
+#workspaces button.active {
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.11);
+}
+
+#workspaces button.empty {
+
+    color: #383d46;
+}
+
+#workspaces button:hover {
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.07);
+}
+
+/* =========================================================
+   LANGUAGE
+   ========================================================= */
+
+#hyprland-language {
+
+    color: #ffffff;
+
+    min-width: 28px;
+
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+/* =========================================================
+   MICROPHONE
+   ========================================================= */
+
+#custom-microphone {
+
+    color: #b7bec9;
+
+    min-width: 20px;
+}
+
+#custom-microphone:hover {
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   VOLUME
+   ========================================================= */
+
+#pulseaudio {
+
+    color: #b7bec9;
+}
+
+#pulseaudio.muted {
+
+    color: #656b75;
+}
+
+/* =========================================================
+   NETWORK
+   ========================================================= */
+
+#network {
+
+    color: #b7bec9;
+}
+
+#network.disconnected {
+
+    color: #656b75;
+}
+
+/* =========================================================
+   BLUETOOTH
+   ========================================================= */
+
+#bluetooth {
+
+    color: #b7bec9;
+}
+
+#bluetooth.disabled,
+#bluetooth.off {
+
+    color: #555b65;
+}
+
+/* =========================================================
+   BATTERY
+   ========================================================= */
+
+#battery {
+
+    color: #b7bec9;
+}
+
+#battery.charging {
+
+    color: #b7bec9;
+}
+
+#battery.warning {
+
+    color: #c8ad72;
+}
+
+#battery.critical {
+
+    color: #d16c76;
+}
+
+/* =========================================================
+   SYSTEM
+   ========================================================= */
+
+#cpu,
+#memory,
+#custom-vram,
+#temperature,
+#disk {
+
+    color: #b7bec9;
+}
+
+/* =========================================================
+   TEMPERATURE
+   ========================================================= */
+
+#temperature.critical {
+
+    color: #d16c76;
+}
+
+/* =========================================================
+   SECONDARY
+   ========================================================= */
+
+#custom-uptime,
+#custom-notifications {
+
+    color: #8e96a3;
+}
+
+/* =========================================================
+   TRAY
+   ========================================================= */
+
+#tray {
+
+    padding: 0 8px;
+}
+
+#tray > .passive {
+
+    -gtk-icon-effect: none;
+}
+
+#tray > .needs-attention {
+
+    -gtk-icon-effect: highlight;
+}
+
+/* =========================================================
+   CLOCK
+   ========================================================= */
+
+#clock {
+
+    color: #ffffff;
+
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* =========================================================
+   POWER
+   ========================================================= */
+
+#custom-power {
+
+    color: #9299a5;
+
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+#custom-power:hover {
+
+    color: #ffffff;
+}
+
+/* =========================================================
+   TOOLTIP
+   ========================================================= */
+
+tooltip {
+
+    background: rgba(14, 16, 20, 0.98);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+
+    border-radius: 8px;
+
+    padding: 7px 10px;
+}
+
+tooltip label {
+
+    color: #d8dee9;
+
+    font-size: 12px;
+}
+
+/* =========================================================
+   MODULE SPACING
+   ========================================================= */
+
+.modules-left {
+
+    margin-left: 2px;
+}
+
+.modules-center {
+
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.modules-right {
+
+    margin-right: 2px;
+}

@@ -1,0 +1,50 @@
+pane_frames false
+
+simplified_ui true
+
+copy_on_select true
+
+scroll_buffer_size 10000
+
+default_shell "zsh"
+
+theme "fastik"
+
+keybinds {
+    normal {
+        bind "Alt h" { MoveFocus "Left"; }
+        bind "Alt l" { MoveFocus "Right"; }
+        bind "Alt k" { MoveFocus "Up"; }
+        bind "Alt j" { MoveFocus "Down"; }
+
+        bind "Alt n" { NewPane; }
+
+        bind "Alt d" { NewPane "Down"; }
+
+        bind "Alt r" { NewPane "Right"; }
+
+        bind "Alt x" { CloseFocus; }
+
+        bind "Alt f" { ToggleFocusFullscreen; }
+
+        bind "Alt w" { TogglePaneFrames; }
+    }
+}
+
+themes {
+    fastik {
+        fg "#e6e7eb"
+        bg "#222530"
+
+        black "#20232c"
+        red "#ed8796"
+        green "#a6da95"
+        yellow "#eed49f"
+        blue "#8aadf4"
+        magenta "#c6a0f6"
+        cyan "#8bd5ca"
+        white "#cdd0d8"
+
+        orange "#f5a97f"
+    }
+}

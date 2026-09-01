@@ -1,0 +1,263 @@
+# ==========================================================
+# FASTIK STARSHIP
+# Midnight Graphite
+# ==========================================================
+
+add_newline = true
+
+format = """
+$os\
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_status\
+$fill\
+$cmd_duration\
+$time
+$character
+"""
+
+palette = "fastik"
+
+
+# ==========================================================
+# COLORS
+# ==========================================================
+
+[palettes.fastik]
+
+bg = "#222530"
+surface = "#303442"
+
+fg = "#e6e7eb"
+muted = "#9aa0ad"
+
+blue = "#8aadf4"
+purple = "#c6a0f6"
+cyan = "#8bd5ca"
+
+green = "#a6da95"
+red = "#ed8796"
+yellow = "#eed49f"
+
+
+# ==========================================================
+# OS
+# ==========================================================
+
+[os]
+
+disabled = false
+style = "fg:blue"
+
+
+[os.symbols]
+
+Arch = " "
+
+
+# ==========================================================
+# USER
+# ==========================================================
+
+[username]
+
+show_always = true
+
+style_user = "fg:fg bold"
+style_root = "fg:red bold"
+
+format = "[$user]($style)"
+
+
+# ==========================================================
+# HOSTNAME
+# ==========================================================
+
+[hostname]
+
+ssh_only = false
+
+style = "fg:muted"
+
+format = "[@$hostname]($style)"
+
+
+# ==========================================================
+# DIRECTORY
+# ==========================================================
+
+[directory]
+
+style = "fg:blue bold"
+
+format = " [$path]($style)"
+
+truncation_length = 4
+
+truncate_to_repo = false
+
+home_symbol = "~"
+
+
+[directory.substitutions]
+
+"Documents" = "󰈙"
+"Downloads" = "󰉍"
+"Pictures" = "󰉏"
+"Videos" = "󰕧"
+"Music" = "󰝚"
+"Projects" = "󰲋"
+
+
+# ==========================================================
+# GIT
+# ==========================================================
+
+[git_branch]
+
+symbol = " "
+
+style = "fg:purple bold"
+
+format = " [$symbol$branch]($style)"
+
+
+[git_status]
+
+style = "fg:red"
+
+format = " [$all_status$ahead_behind]($style)"
+
+
+# ==========================================================
+# FILL
+# ==========================================================
+
+[fill]
+
+symbol = " "
+
+
+# ==========================================================
+# COMMAND DURATION
+# ==========================================================
+
+[cmd_duration]
+
+min_time = 1000
+
+style = "fg:yellow"
+
+format = "[$duration]($style)"
+
+
+# ==========================================================
+# TIME
+# ==========================================================
+
+[time]
+
+disabled = false
+
+time_format = "%H:%M"
+
+style = "fg:muted"
+
+format = " [$time]($style)"
+
+
+# ==========================================================
+# PROMPT
+# ==========================================================
+
+[character]
+
+success_symbol = "[❯](fg:blue bold)"
+
+error_symbol = "[❯](fg:red bold)"
+
+vimcmd_symbol = "[❮](fg:purple bold)"
+
+
+# ==========================================================
+# PROGRAMMING LANGUAGES
+# ==========================================================
+
+[package]
+
+disabled = false
+
+symbol = "󰏗 "
+
+
+[python]
+
+symbol = " "
+
+style = "fg:yellow"
+
+format = " [$symbol$version]($style)"
+
+
+[nodejs]
+
+symbol = " "
+
+style = "fg:green"
+
+format = " [$symbol$version]($style)"
+
+
+[rust]
+
+symbol = " "
+
+style = "fg:red"
+
+format = " [$symbol$version]($style)"
+
+
+[c]
+
+symbol = " "
+
+style = "fg:blue"
+
+format = " [$symbol$version]($style)"
+
+
+[cpp]
+
+symbol = " "
+
+style = "fg:blue"
+
+format = " [$symbol$version]($style)"
+
+
+# ==========================================================
+# DOCKER
+# ==========================================================
+
+[docker_context]
+
+symbol = " "
+
+style = "fg:cyan"
+
+format = " [$symbol$context]($style)"
+
+
+# ==========================================================
+# SUDO
+# ==========================================================
+
+[sudo]
+
+disabled = false
+
+symbol = "󰞀 "
+
+style = "fg:red"

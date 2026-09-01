@@ -1,0 +1,11 @@
+[Unit]
+Description=Automatic wallpaper rotation
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=5min
+AccuracySec=1s
+Persistent=false
+
+[Install]
+WantedBy=graphical-session.target

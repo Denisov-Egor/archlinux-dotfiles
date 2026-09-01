@@ -1,0 +1,86 @@
+/* ==========================================
+   HYPRLAND POWER MENU
+   Minimal / Dark / Japanese
+   ========================================== */
+
+* {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Main window */
+
+window {
+    background-color: rgba(17, 17, 19, 0.96);
+
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 20px;
+
+    padding: 12px;
+
+    box-shadow: 0px 20px 70px rgba(0, 0, 0, 0.55);
+}
+
+/* Search completely disabled */
+
+#input {
+    display: none;
+}
+
+/* Containers */
+
+#outer-box {
+    margin: 0;
+    padding: 0;
+}
+
+#inner-box {
+    margin: 0;
+    padding: 0;
+}
+
+/* Buttons */
+
+#entry {
+    min-height: 58px;
+
+    margin: 4px 0;
+    padding: 0 20px;
+
+    border-radius: 14px;
+
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Selected button */
+
+#entry:selected {
+    background-color: rgba(255, 255, 255, 0.075);
+    color: rgba(255, 255, 255, 0.98);
+
+    outline: none;
+}
+
+/* Icon */
+
+#img {
+    min-width: 28px;
+    min-height: 28px;
+
+    margin-right: 14px;
+}
+
+/* Text */
+
+#text {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hide scrollbar */
+
+scrollbar {
+    display: none;
+}

@@ -1,0 +1,39 @@
+# ==========================================================
+# FASTIK ZATHURA
+# ==========================================================
+
+set default-bg "#222530"
+set default-fg "#e6e7eb"
+
+set recolor true
+
+set recolor-lightcolor "#222530"
+set recolor-darkcolor "#e6e7eb"
+
+set statusbar-bg "#303442"
+set statusbar-fg "#e6e7eb"
+
+set inputbar-bg "#303442"
+set inputbar-fg "#e6e7eb"
+
+set highlight-color "#8aadf4"
+set highlight-active-color "#c6a0f6"
+
+set notification-bg "#303442"
+set notification-fg "#e6e7eb"
+
+set completion-bg "#222530"
+set completion-fg "#e6e7eb"
+
+set completion-highlight-bg "#8aadf4"
+set completion-highlight-fg "#222530"
+
+set font "JetBrainsMono Nerd Font 11"
+
+set statusbar-basename true
+
+set selection-clipboard clipboard
+
+set smooth-scroll true
+
+set scroll-step 50
